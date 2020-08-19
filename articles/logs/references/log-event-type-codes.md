@@ -45,6 +45,7 @@ The following table lists the codes associated with the each log event.
 | `feoobft` | Failed Exchange | Failed exchange of Password and OOB Challenge for Access Token | |
 | `feotpft` | Failed Exchange | Failed exchange of Password and OTP Challenge for Access Token | |
 | `fepft` | Failed Exchange | Failed exchange of Password for Access Token | |
+| `fepotpft` | Failed Exchange | Failed exchange of Passwordless OTP for Access Token | |
 | `fercft` | Failed Exchange | Failed Exchange of Password and MFA Recovery code for Access Token | |
 | `fertft` | Failed Exchange | Failed Exchange of <dfn data-key="refresh-token">Refresh Token</dfn> for Access Token | |
 | `ferrt` | Failed Exchange | Failed Exchange of Rotating <dfn data-key="refresh-token">Refresh Token</dfn> | |
