@@ -50,7 +50,9 @@ You can also do this using the Management API:
 }
 ```
 
-The `login_url` should point to a route in the application that ends up redirecting to Auth0's `/authorize` endpoint, e.g. `https://mycompany.org/login`. Note that it requires `https` and it cannot point to `localhost`.
+The `login_url` should point to a route in the application that ends up redirecting to Auth0's `/authorize` endpoint, e.g. `https://mycompany.org/login`. Note that it requires `https` and it cannot point to `localhost`. `login_url` can include query parameters and a URI fragment.
+
+As per [OIDC Third Party Initiated Login](https://openid.net/specs/openid-connect-core-1_0.html#ThirdPartyInitiatedLogin) specification, `iss` containing Issuer Identifier will be added as a query string parameter to `login_url` before redirecting.
 
 ## Scenarios for redirecting to the default login route
 
